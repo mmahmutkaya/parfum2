@@ -14,10 +14,10 @@ const Gender = () => {
     return (
         <div id='Gender' className="max-w-screen-lg grid grid-cols-2 gap-20 justify-items-center ">
             <div onClick={() => handleClick({ gender: "woman" })} >
-                <Image className='transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000' width={300} height={500} src={woman} />
+                <Image alt="woman" className='transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000' width={300} height={500} src={woman} />
             </div>
             <div onClick={() => handleClick({ gender: "man" })} >
-                <Image className='transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000' width={300} height={500} src={man} />
+                <Image alt="man" className='transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000' width={300} height={500} src={man} />
             </div>
         </div>
     )
