@@ -7,6 +7,10 @@ import man from "../../public/images/dog1.png";
 //   return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
 // };
 
+const myLoader = ({ src, width, quality }) => {
+  return `https://raw.githubusercontent.com/mmahmutkaya/parfum2/deneme1/public/images/dog1.png`;
+};
+
 const Gender = () => {
   const handleClick = ({ gender }) => {
     console.log(gender);
@@ -35,15 +39,15 @@ const Gender = () => {
         />
       </div>
 
-      {/* <div onClick={() => handleClick({ gender: "man" })}>
+      <div onClick={() => handleClick({ gender: "man" })}>
         <Image
           loader={myLoader}
-          src="i-dixit.jpg"
+          src="dog1.png"
           alt="Picture of the author"
           width={500}
           height={500}
         />
-      </div> */}
+      </div>
 
       <div>
         <button
