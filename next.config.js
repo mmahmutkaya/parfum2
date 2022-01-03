@@ -5,7 +5,6 @@ module.exports = {
 
 module.exports = {
   images: {
-    loader: "imgix",
-    path: "https://image.ceneostatic.pl"
+    path: "http://localhost:3000"
   }
 };
