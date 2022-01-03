@@ -1,19 +1,20 @@
 import { createContext, useState, useEffect } from 'react'
 
-export const FmpContext = createContext({
-    user: null,
-    login: () => {},
-    logout: () => {},
-    authReady: false
-  })
+export const FmpContext = createContext(null)
   
 
 export const FmpContextProvider = ({ children }) => {
 
-    const [user, setUser] = useState("mahmut2")
-    const [counter, setCounter] = useState(0)
+    const [showGender, setShowGender] = useState(true)
+    const [showPurpose, setShowPurpose] = useState(false)
+    const [showHoroscope, setShowHoroscope] = useState(false)
 
-    const context = { user, setUser, counter, setCounter}
+
+    const context = { 
+        showGender, setShowGender,
+        showPurpose, setShowPurpose,
+        showHoroscope, setShowHoroscope
+    }
 
     //   useEffect(() => {
     //     // init netlify identity connection

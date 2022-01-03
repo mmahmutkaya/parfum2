@@ -1,3 +1,6 @@
+import { useContext } from 'react'
+import FmpContext from '../../context/FmpContext'
+
 
 const burclar = [
     "koc",
@@ -17,10 +20,18 @@ const burclar = [
 
 const Horoscope = () => {
 
-    const handleClick = ({horoscope}) => {
-        console.log(horoscope)
-    };
-
+    const {
+        setShowPurpose,
+        setShowHoroscope
+      } = useContext(FmpContext)
+    
+      const handleClick = ({ gender }) => {
+        console.log(gender);
+        setShowHoroscope(false)
+        setShowPurpose(true)
+      };
+    
+    
     return (
         <div id='Burclar' className="flex flex-col gap-3 items-center justify-center ">
             {burclar.map(burc =>

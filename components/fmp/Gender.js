@@ -1,12 +1,22 @@
 import Image from "next/image";
+import { useContext } from 'react'
+import FmpContext from '../../context/FmpContext'
 
 const woman = "/images/woman2.png"
 // import man from "../../public/images/dog1.png";
 
 
 const Gender = () => {
+
+  const {
+    setShowGender,
+    setShowHoroscope
+  } = useContext(FmpContext)
+
   const handleClick = ({ gender }) => {
     console.log(gender);
+    setShowGender(false)
+    setShowHoroscope(true)
   };
 
   return (
