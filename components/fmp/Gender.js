@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // import woman from "../../public/images/woman2.png"
-import man from "../../public/images/man3.webp";
+import man from "../../public/images/dog1.png";
 
 // const myLoader = ({ src, width, quality }) => {
 //   return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
