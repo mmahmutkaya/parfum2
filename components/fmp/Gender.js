@@ -3,9 +3,9 @@ import Image from "next/image";
 // import woman from "../../public/images/woman2.png"
 import man from "../../public/images/man3.webp";
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
-};
+// const myLoader = ({ src, width, quality }) => {
+//   return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
+// };
 
 const Gender = () => {
   const handleClick = ({ gender }) => {
@@ -35,7 +35,7 @@ const Gender = () => {
         />
       </div>
 
-      <div onClick={() => handleClick({ gender: "man" })}>
+      {/* <div onClick={() => handleClick({ gender: "man" })}>
         <Image
           loader={myLoader}
           src="i-dixit.jpg"
@@ -43,7 +43,7 @@ const Gender = () => {
           width={500}
           height={500}
         />
-      </div>
+      </div> */}
 
       <div>
         <button
