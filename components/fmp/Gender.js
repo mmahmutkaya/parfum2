@@ -8,7 +8,7 @@ import man from "../../public/images/dog1.png";
 // };
 
 const myLoader = ({ src, width, quality }) => {
-  return `https://raw.githubusercontent.com/mmahmutkaya/parfum2/deneme1/public/images/dog1.png`;
+  return `https://res.cloudinary.com/dal2s2do5/image/upload/v1641233498/samples/parfume2/0/woman2_qv4ttr.png`;
 };
 
 const Gender = () => {
