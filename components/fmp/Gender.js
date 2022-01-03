@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // import woman from "../../public/images/woman2.png"
-// import man from "../../public/images/man2.png"
+import man from "../../public/images/man3.webp";
 
 const myLoader = ({ src, width, quality }) => {
   return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
@@ -25,6 +25,16 @@ const Gender = () => {
           {"woman"}
         </button>
       </div>
+
+      <div onClick={() => handleClick({ gender: "man" })}>
+        <Image
+          className="transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000"
+          width={300}
+          height={500}
+          src={man}
+        />
+      </div>
+
       <div onClick={() => handleClick({ gender: "man" })}>
         <Image
           loader={myLoader}
