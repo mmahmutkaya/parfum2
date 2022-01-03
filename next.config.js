@@ -1,5 +1,11 @@
-
 module.exports = {
   reactStrictMode: true,
-  swcMinify: false,
-}
+  swcMinify: false
+};
+
+module.exports = {
+  images: {
+    loader: "imgix",
+    path: "https://image.ceneostatic.pl"
+  }
+};

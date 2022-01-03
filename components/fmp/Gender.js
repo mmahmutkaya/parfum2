@@ -1,7 +1,11 @@
 import Image from "next/image";
 
 // import woman from "../../public/images/woman2.png"
-import man from "https://picsum.photos/536/354";
+// import man from "../../public/images/man2.png"
+
+const myLoader = ({ src, width, quality }) => {
+  return `https://image.ceneostatic.pl/data/products/10813131/i-dixit.jpg`;
+};
 
 const Gender = () => {
   const handleClick = ({ gender }) => {
@@ -23,10 +27,11 @@ const Gender = () => {
       </div>
       <div onClick={() => handleClick({ gender: "man" })}>
         <Image
-          className="transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000"
-          width={300}
+          loader={myLoader}
+          src="i-dixit.jpg"
+          alt="Picture of the author"
+          width={500}
           height={500}
-          src={man}
         />
       </div>
 
