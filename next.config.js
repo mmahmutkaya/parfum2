@@ -3,8 +3,8 @@ module.exports = {
   swcMinify: false
 };
 
-module.exports = {
-  images: {
-    path: "http://localhost:3000"
-  }
-};
+// module.exports = {
+//   images: {
+//     path: "https://image.ceneostatic.pl"
+//   }
+// };

@@ -22,7 +22,7 @@ const Gender = () => {
           className="transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000"
           width={300}
           height={500}
-          src="images/dog1.png"
+          src={'/man3.webp'}
         />
       </div>
 
