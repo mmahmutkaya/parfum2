@@ -26,16 +26,16 @@ const Gender = () => {
     >
       <div onClick={() => handleClick({ gender: "man" })}>
         <Image
-          className="transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000"
+          className="transition ease-in-out hover:scale-105 hover:border-red-700 duration-500"
           width={300}
           height={500}
           src={'/images/man2.png'}
         />
       </div>
 
-      <div onClick={() => handleClick({ gender: "man" })}>
+      <div onClick={() => handleClick({ gender: "woman" })}>
         <Image
-          className="transition ease-in-out hover:scale-110 hover:border-red-700 duration-1000"
+          className="transition ease-in-out hover:scale-105 hover:border-red-700 duration-500"
           width={300}
           height={500}
           src={woman}
